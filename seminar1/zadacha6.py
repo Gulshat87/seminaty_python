@@ -3,7 +3,7 @@
 #  оно 5 и 10 или 15, но не 30.
 
 a = int(input())
-if a % 5 == 0 and (a % 10 == 0 or a % 10 == 0) and a % 30 !=0:
+if (a % 5 == 0 and (a % 10 == 0 or a % 10 == 0)) and a % 30 !=0:
     print('ok')
 else:
     print('no')
