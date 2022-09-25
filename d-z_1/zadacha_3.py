@@ -13,7 +13,6 @@
 
 x = int(input())
 y = int(input())
-
 x != 0
 y != 0
  
