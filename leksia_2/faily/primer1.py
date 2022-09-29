@@ -1,0 +1,14 @@
+colors = ['red', 'green', 'blue']
+data = open('file.txt', 'a')
+data.writelines(colors) #разделителей не будет,значит без пробелов запишется
+data.close() #закрытие файла-обяз-но!
+
+
+
+
+exit() #закрывает след. код
+path = 'file.txt'
+data = open(path, 'r')
+for line in data:
+    print(line)
+data.close()
