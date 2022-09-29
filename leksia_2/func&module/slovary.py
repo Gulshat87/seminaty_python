@@ -1,16 +1,15 @@
 #словари - неупорядоченное коллекции произвольных 
 #обьектов с доступом по ключу
 
-dictionary = {}
-dictionary = \
-    {
+# dictionary = {}
+dictionary = {
     'up': 'вверх'
-    'left':'влево'
+    'left': 'влево'
     'down': 'вниз'
     'right': 'вправо'
     } #\-означает, переход на новую строку
 
-# print(dictionary)# выведет все что в фиг скобках
+# print(dictionary)# выведет все что в фиг. скобках
 # print(dictionary['left']) #выведет что написано в left
 
 # for k in dictionary.keys():

@@ -7,11 +7,21 @@
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ]
 #  (1, 1*2, 1*2*3, 1*2*3*4)
 
+# #первый вариант
+# n = int(input())
+# m = 1
+# mass = []
+
+# for i in range(1, n+1):
+#     m *= i
+#     mass.append(m)
+# print(mass) 
+
+
+
+# второй вариант-через факториал:
+
+import math
 n = int(input())
-a = []
-b = []
-m = 1
-for i in range(0, n+1):
-    a.append(m)
-    m = (m+1)*4
-print(a)
+mass = [math.factorial(i) for i in range(1,n+1)]
+print(mass)
