@@ -10,10 +10,19 @@
 # список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 # список: [], ищем: "123", ответ: -1
 
+from gettext import find
+from itertools import count
 
 
-
-list = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"]
-m = [i for i in range(6)]
-print('list[5]:', list[5])
+list = ["123", "234", 123, "567"]
+findstr = "123"
+count = 0
+index = -1
+for i in range(len(list)):
+    if list[i]==findstr:
+        count+=1
+        if count == 2:
+            index = i
+            break
+print(index)
 
