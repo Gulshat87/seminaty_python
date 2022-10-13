@@ -11,8 +11,8 @@
 #  своего конкурента?
 
 # a) Добавьте игру против бота
-
-from random import *
+from random 
+import *
 import os
 
 
